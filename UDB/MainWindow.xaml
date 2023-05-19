@@ -1,0 +1,61 @@
+﻿<Window x:Class="UDB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UDB"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="645" Width="1135">
+    <Grid Margin="0,0,-125,-38">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="502*"/>
+            <ColumnDefinition Width="633*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/fondo.png"/>
+        </Grid.Background>
+        <Image HorizontalAlignment="Left" Height="176" Margin="84,8,0,0" VerticalAlignment="Top" Width="134" Source="/logo.png" RenderTransformOrigin="0.988,0.353"/>
+        <Label Content="UNIVERSIDAD DON BOSCO" HorizontalAlignment="Left" Height="134" Margin="254,10,0,0" VerticalAlignment="Top" Width="864" FontSize="48" FontWeight="Bold" FontStyle="Italic" FontFamily="Microsoft YaHei" Grid.ColumnSpan="2"/>
+        <MediaElement x:Name="mediaPlayer" Visibility="Visible" Margin="35,212,125,109" UnloadedBehavior="Manual" Source="/Donbosco.mp4" IsMuted="True" />
+        <Image HorizontalAlignment="Left" Height="145" Margin="4,129,0,0" VerticalAlignment="Top" Width="148" Source="/evento1.jpg" Grid.Column="1"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="111" Width="394" FontSize="20"><Run/><LineBreak/><Run Text="Don Bosco y el sueño de los 9 años que marcó el inicio de la obra salesiana"/></TextBlock>
+        <Image HorizontalAlignment="Left" Height="140" Margin="4,304,0,0" VerticalAlignment="Top" Width="159" Source="/evento2.jpg" Grid.Column="1"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="110" Width="394" FontSize="20" Text="El poeta y novelista Manlio Argueta presentó la reedición de su novela Poetas del Mal"/>
+        <Image HorizontalAlignment="Left" Height="140" Margin="4,483,0,0" VerticalAlignment="Top" Width="159" Source="/evento3.jpg" Grid.Column="1"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,498,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="110" Width="394" FontSize="20" Text="Asociacionismo Salesiano Universitario: 10 años de protagonismo estudiantil"/>
+        <Button Content="Principal" HorizontalAlignment="Left" Margin="0,609,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.928,-2.728" Height="48" Width="128" FontSize="20" Click="Button_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF0BA024" Offset="0"/>
+                    <GradientStop Color="#FF010F03" Offset="0.906"/>
+                    <GradientStop Color="#FF099120" Offset="0.092"/>
+                    <GradientStop Color="#FFC7C9C7" Offset="0.243"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn_carreras" Content="Carreras" HorizontalAlignment="Left" Margin="142,609,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.928,-2.728" Height="48" Width="128" FontSize="20" Click="btn_carreras_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF0BA024" Offset="0"/>
+                    <GradientStop Color="#FF010F03" Offset="0.906"/>
+                    <GradientStop Color="#FF099120" Offset="0.092"/>
+                    <GradientStop Color="#FFDCE1DD" Offset="0.243"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn_opiones" Content="Opinion" HorizontalAlignment="Left" Margin="304,609,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.928,-2.728" Height="48" Width="128" FontSize="20" Click="Button_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF0BA024" Offset="0"/>
+                    <GradientStop Color="#FF010F03" Offset="0.906"/>
+                    <GradientStop Color="#FF099120" Offset="0.092"/>
+                    <GradientStop Color="#FFC7C9C7" Offset="0.243"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="bosco.jpg" />
+    <None Remove="evento1.jpg" />
+    <None Remove="evento2.jpg" />
+    <None Remove="evento3.jpg" />
+    <None Remove="fondo.png" />
+    <None Remove="logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="bosco.jpg" />
+    <Resource Include="evento1.jpg" />
+    <Resource Include="evento2.jpg" />
+    <Resource Include="evento3.jpg" />
+    <Resource Include="fondo.png" />
+    <Resource Include="logo.png" />
+  </ItemGroup>
+
+</Project>
